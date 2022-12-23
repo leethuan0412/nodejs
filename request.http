@@ -1,0 +1,49 @@
+
+POST  http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "thuanlee",
+    "password": "thuanle"   
+}
+
+###
+POST  http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "thuanlee",
+    "password": "thuanle"   
+}
+
+
+###
+POST  http://localhost:3000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2E1NGUyZjBmZjcxMTVhN2Y4NWY0ZjIiLCJpYXQiOjE2NzE3NzgwMTR9.64FhzNYX_7BBJ79dpual9GmWcXLi2riONkGhOcUnyds
+
+{
+    "title":"yruertut",
+    "description":"helgewggweglo eveeegwggwegewryofne",
+    "status":"LEARNED",
+    "url":"shopee.com"
+}
+###
+GET  http://localhost:3000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2E1NGUyZjBmZjcxMTVhN2Y4NWY0ZjIiLCJpYXQiOjE2NzE3ODEzNzB9.xwB6IemNb_COLUsGBKVBsWFHeWJvpxowtmCwD66XHIE
+
+###
+PUT   http://localhost:3000/api/posts/63a54fbb1cf87112ac17a3fb
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2E1NGUyZjBmZjcxMTVhN2Y4NWY0ZjIiLCJpYXQiOjE2NzE3ODA2Mjl9.7KXyaHEHWurrf_LgHpiU8Org93pZBN3-QNmnmYI_VKQ
+
+{
+    "title":"VueJsAAAAAA",
+    "description":"description",
+    "url": "yahoo.com",
+    "status":"LEARNING"
+}
+###
+DELETE    http://localhost:3000/api/posts/63a54fbb1cf87112ac17a3fb
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2E1NGUyZjBmZjcxMTVhN2Y4NWY0ZjIiLCJpYXQiOjE2NzE3ODEzNzB9.xwB6IemNb_COLUsGBKVBsWFHeWJvpxowtmCwD66XHIE
